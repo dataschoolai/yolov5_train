@@ -5,12 +5,13 @@ project=Tutorial
 model=yolov5s
 epochs=30
 name=damage
+dataset=/usr/src/app/workspace/YOLOv5/dataset.yaml
 
 python $APP_PATH/train.py \
 --img 640 \
 --batch 16 \
 --epochs $epochs \
---data dataset.yaml \
+--data $dataset \
 --weights yolov5s.pt \
 --project $project \
 --name $name 
