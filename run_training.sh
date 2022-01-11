@@ -9,4 +9,4 @@ docker run --rm --ipc=host --gpus all -it \
 --env=$app_path \
 --env=$workspace \
 -v $workspace_local:$workspace_remote \
-damage bash
+damage bash -c 'bash $workspace/train.sh'
