@@ -15,3 +15,6 @@ python $APP_PATH/train.py \
 --weights yolov5s.pt \
 --project $project \
 --name $name 
+
+#Copy the model to workspace
+cp -r $APP_PATH/$project/ $workspace
